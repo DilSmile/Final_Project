@@ -1,0 +1,176 @@
+body{
+    margin: 0;
+    
+    font-family: sans-serif;
+    font-weight: 500;
+}
+#text_success{
+    font-size: 300%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+table{
+    font-size: 200%;
+   margin-left: 200px;
+   margin-right:200px;
+}
+.proforientation{
+   margin-left: 200px;
+   margin-right:200px;
+    margin-top: 150px;
+    border:3px solid #002469;
+    border-radius: 15%;
+    background-color: #002469;
+}
+.proforientation_text_image{
+display:flex;
+
+}
+#proforientation_text{font-size: 350%;
+margin-left: 5%;
+color: white;}
+#proforientation_img{
+    width: 50%;
+    height:50%;
+    margin-left: 110px;
+}
+.button_proforientation:hover{
+    background-color:white;
+}
+.button_proforientation{
+    cursor: pointer;
+    padding: 5px;
+    border-radius:30%;
+    background-color: transparent;
+    color: #9E2629;
+    border: 2px solid white;
+    margin-left:5%;
+    margin-bottom: 5% ;
+    font-size: 200%;
+}
+#actions{text-align: center;
+  margin-top:150px;
+font-size:300%;
+}
+.our_news{
+  
+ margin-left: 200px;
+   margin-right:200px;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+}
+
+.first_article{
+  background-color: antiquewhite;
+  padding:50px;
+border:2px solid transparent;
+border-radius: 20%;
+}
+.second_article{
+  background-color:#717171;
+  padding:50px;
+    border:2px solid transparent;
+    border-radius: 20%;
+    }
+.third_article{
+  background-color:#d79292;
+  padding:50px;
+        border:2px solid transparent;
+        border-radius: 20%;
+        }
+        * {box-sizing:border-box}
+.button_third_article{
+font-size: 100%;
+border: 1px solid transparent;
+background-color: #efd983;
+}
+.button_second_article{
+  
+font-size: 100%;
+border: 1px solid transparent;
+background-color: #efd983;
+}
+.button_first_article{
+  font-size: 100%;
+border: 1px solid transparent;
+background-color:#efd983;
+}
+.button_first_article:hover{background-color: #b76b6d;}
+.button_second_article:hover{background-color: #b76b6d;}
+.button_third_article:hover{background-color: #b76b6d;}                                                                                                                                                                                                                                                                        
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: 150px 200px 0 200px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.contacts{
+    margin-top: 80px;
+    justify-content: space-between;
+    display:flex;
+    font-size: 100%;
+    background-color: #9E2629;
+}
