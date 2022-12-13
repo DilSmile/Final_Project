@@ -16,7 +16,6 @@ body{
   }
   #navbar {
     height: 48px;
-    /* background-color: #000000; */
      background-color:#002369; 
     padding-left: 25px;
     min-width: 470px;
@@ -61,16 +60,16 @@ body{
     padding-top: 94px;
   }
   .about_us{
-     /* background-color: #3D3BFF;  */
      margin-top:30px;
   }
   .description{
     margin-top:38px;
+    font-family: "Gill Sans", sans-serif;
    
 
   }
   .text_description{
-    font-size: 31px;
+    font-size: 27px;
     font-weight: 500;
     margin-top: 35px;
     width: 1256px;
@@ -85,12 +84,6 @@ body{
     display:flex;
     justify-content: space-around;
    }
-  .courses{
-    /* margin-top:100px;
-    margin-bottom: 100px; */
-     /* background-color: bisque; */
-  
-  }
   .cards_dilnaz{
     margin-top:5px;
     margin-left:121px;
@@ -144,6 +137,11 @@ body{
     margin-top: 7px;
     margin-left: 13px;
   }
+  .logo_img{
+    width: 161px;
+    height: 94px;
+    margin-top: -21px;
+  }
   .desciption_span{
     font-size: 24px;
   }
@@ -151,39 +149,7 @@ body{
     padding-bottom: 7px;
     border-bottom: 2px solid #000000;
   }
-  .mentors{
-    display:flex;
-    justify-content:space-between;
-    padding-left: 14px;
-    padding-right: 14px;
-  }
-  .profesor_{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 18%;
-    border-radius: 5px;
-  }
-  .profesor_:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  .mentor_img {
-    border-radius: 5px 5px 0 0;
-}
-.mentor_text{
-  padding: 2px 16px;
-}
-.professors{
-  margin-bottom:100px;
-}
-
-
-
-
-
-
-
-
-
+ 
 
   .tooltip {
     position: relative;
@@ -209,8 +175,6 @@ body{
     bottom: 100%;
     left: 50%;
     margin-left: -98px;
-    
-    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
     opacity: 0;
     transition: opacity 1s;
   }
@@ -219,77 +183,4 @@ body{
     visibility: visible;
     opacity: 1;
   }
-
-
-
-
-
-
-
-
-
-
-
-  .zl{ 
-    font-size:90px;
-    font-family:'Times New Roman', Times, serif; 
-    padding: 10px 200px; 
-} .b{ 
-    margin: 55px 0 0 200px; 
-    justify-content: space-around; 
-} 
-.button{ 
-    font-size: 12px; 
-    letter-spacing: 0.5px; 
-    font-family: 'SuisseIntl',Arial,sans-serif; 
-    text-transform: uppercase; 
-    background:transparent; 
-    height:28px; 
-    border-radius:60px; 
-    cursor:pointer; 
-    border: 2px solid white; 
-    color:white ;
-    width: 150px;
-    margin-top: 20px;
-}.button:hover{ 
-    font-size: 13px; 
-    background-color: #ffffff; 
-    color:rgb(0, 0, 0); 
-    border: 1px solid rgb(252, 252, 252); 
-}
-
-.film {
-    display: flex; 
-    justify-content: space-between;
-    align-items: center; 
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 20px;
-}
-
-.film__block {
-    display: flex; 
-    flex-direction: column; 
-    justify-content: flex-start;
-    min-height: 300px;
-}
-
-.film__block_img {
-    width: 250px;
-    height: 234px;
-
-}
-
-.film__block_headText {
-    margin-top: 30px;
-    
-}
-
-.container {
-    width: 1200px;
-    margin: 0 auto;
-}
-.link{
-    text-decoration: none;
-}
-
+ 
