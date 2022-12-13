@@ -5,11 +5,9 @@ class Slider {
       this.valueElement = valueElement
       this.options = options
   
-      // Attach a listener to "change" event
       this.rangeElement.addEventListener('input', this.updateSlider.bind(this))
     }
   
-    // Initialize the slider
     init() {
       this.rangeElement.setAttribute('min', options.min)
       this.rangeElement.setAttribute('max', options.max)
@@ -43,8 +41,8 @@ class Slider {
   let valueElement = document.querySelector('.range .range__value span') 
   
   let options = {
-    min: 2000,
-    max: 3500,
+    min: 1000,
+    max: 2500,
     cur: 750
   }
   
