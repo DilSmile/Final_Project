@@ -17,6 +17,8 @@
         </p>
      
     </div>
+    
+    <!--My name is Maxim-->
   
     <div class="mySlides fade">
       
