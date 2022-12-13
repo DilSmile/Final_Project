@@ -56,44 +56,6 @@
     .python_dilnaz_p{
         margin-left: 443px;
     }
-/* .slider_payment {
-	position: relative;
-	width: 610px;
-	height: 18px;
-    margin-top:108px;
-    margin-left:210px;
-}
-
-.output_payment {
-	position: absolute;
-	left: -20px;
-	top: -40px;
-	padding: 7px 10px;
-	background: #000000;
-	color: #fff;
-	border-radius: 10px 10px 0 10px;
-	font-weight: bold;
-}
-
-#fader_payment {
-	position: relative;
-	left: 3px;
-	width: 600px;
-	height: 2px;
-	background: #000000;
-	-webkit-appearance: none;
-	outline: none;
-	border-radius: 4px;
-}
-
-#fader_payment::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	width: 25px;
-	height: 25px;
-	border-radius: 50%;
-	background: #006aff;
-	box-shadow: 0 0 2px #222;
-} */
 .range {
   display: flex;  
   margin-left: 190px;
@@ -181,7 +143,6 @@
   background: #f9ca24;
 }
 
-/* remove border */
 input::-moz-focus-inner, input::-moz-focus-outer {
   border: 0;
 }
@@ -254,7 +215,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {
     background-color: #272727;
     border: 1px;
     width: 1350px;
-    height: 1039px;
+    height: 1294px;
     margin-left: 85px;
     margin-top: 84px;
 }.work_dilnaz_img{
@@ -315,13 +276,13 @@ input::-moz-focus-inner, input::-moz-focus-outer {
 }
 
 .support_center_card-front {
-  background-color: #ffdf6e;
+  background-color: #afdfb4;
   color: black;
 }
 
 .support_center_card-back {
   /* background-color: #2980b9; */
-  background-color: #ffdf6e;
+  background-color: #afdfb4;
   color: white;
   transform: rotateY(180deg);
 }.support_center{
@@ -361,6 +322,108 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   width:272px;
   text-align: start;
 } */
+.slideshow_review {
+   max-width: 1140px;
+    position: relative;
+    margin: auto;
+}
+.prev_page, .next_page {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-right: 33px;
+    margin-top: -22px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next_page{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev_page:hover, .next_page:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.next_prev {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .next_prev:hover {
+  background-color: #717171;
+}
+.all {
+  animation-name: all;
+  animation-duration: 1.5s;
+}
+@keyframes all {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.review_employer{
+    width: 467px;
+    height: 300px;
+    background-color: #353535;
+    border-radius: 20px;
+    border: 1px;
+    text-align: start;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    margin-right: 55px;
+    margin-top: 17px;
+    margin-bottom: 40px;
+  }
+  .review_employer_p{
+    margin-top: 31px;
+    margin-left: 184px;
+    color: #E3E3E3;
+    font-size: 14px;
+
+  }
+  .review_employer_h3{
+    font-size: 20px;
+    margin-left: 185px;
+    margin-top: -70px;
+    color: white;
+  }
+  .review_employer_img{
+    width: 56px;
+    height: 56px;
+    margin-left: 56px;
+    margin-top: -41px;
+    color: white;
+    border-radius: 20px;
+  }
+  .review_employer_p2{
+    margin-top: 25px;
+    margin-left: 45px;
+    width: 387px;
+    color: white;
+    line-height: 1.5;
+  }.reviewEmpl {
+    display: block;
+    margin-left: 70px;
+  }.next_prev_1{
+    text-align:center;
+    margin-top:-31px;
+  }.review_employer_h2{
+    font-size:32px;
+    color:white;
+    margin-left: 92px;
+    margin-top: 43px;
+
+  }
 </style>
 <body>
 <section class="about_lessons">
@@ -469,12 +532,72 @@ input::-moz-focus-inner, input::-moz-focus-outer {
       <div class="support_center_card-back">
         <p class="support_center_back_p">Расскажем, как создать продающее портфолио. Вместе выберем привлекательные работы и отдадим на ревью эксперту. Поможем оформить проекты так, что их по достоинству оценят работодатели.</p> 
      </div>
-    </div>
-    
+    </div> 
   </div>
 </div>
 
+<h2 class="review_employer_h2">Отзывы работадателей</h2>
+
+<div class="slideshow_review">
+
+  <div class="reviewEmpl all" >
+    <button class="review_employer">
+      <p class="review_employer_p"> Директор по маркетингу в Checkroi </p>
+       <h3 class="review_employer_h3">Максим Зубцов</h3>
+        <img class="review_employer_img" src="https://248006.selcdn.ru/LandGen/3e574a760e482658dd9e52c39903f369233e0297.webp " alt="python_devoloper">
+        <p class="review_employer_p2"> Skillbox подбирает кандидатов с горящими глазами и желанием развиваться. Например, руководитель нашего SEO-отдела когда-то был новичком, с которым мы встретились благодаря Центру карьеры. </p>
+   </button>
+   <button class="review_employer">
+    <p class="review_employer_p"> Директор по маркетингу в Checkroi </p>
+     <h3 class="review_employer_h3">Максим Зубцов2</h3>
+      <img class="review_employer_img" src="https://248006.selcdn.ru/LandGen/3e574a760e482658dd9e52c39903f369233e0297.webp " alt="python_devoloper">
+      <p class="review_employer_p2"> Skillbox подбирает кандидатов с горящими глазами и желанием развиваться. Например, руководитель нашего SEO-отдела когда-то был новичком, с которым мы встретились благодаря Центру карьеры. </p>
+  </button>
+  </div>
+  
+  <div class="reviewEmpl all" >
+    <button class="review_employer">
+      <p class="review_employer_p"> Директор по маркетингу в Checkroi </p>
+       <h3 class="review_employer_h3">Максим Зубцов3</h3>
+        <img class="review_employer_img" src="https://248006.selcdn.ru/LandGen/3e574a760e482658dd9e52c39903f369233e0297.webp " alt="python_devoloper">
+        <p class="review_employer_p2"> Skillbox подбирает кандидатов с горящими глазами и желанием развиваться. Например, руководитель нашего SEO-отдела когда-то был новичком, с которым мы встретились благодаря Центру карьеры. </p>
+   </button>
+   <button class="review_employer">
+    <p class="review_employer_p"> Директор по маркетингу в Checkroi </p>
+     <h3 class="review_employer_h3">Максим Зубцов4</h3>
+      <img class="review_employer_img" src="https://248006.selcdn.ru/LandGen/3e574a760e482658dd9e52c39903f369233e0297.webp " alt="python_devoloper">
+      <p class="review_employer_p2"> Skillbox подбирает кандидатов с горящими глазами и желанием развиваться. Например, руководитель нашего SEO-отдела когда-то был новичком, с которым мы встретились благодаря Центру карьеры. </p>
+  </button>
+  </div>
+  
+  <div class="reviewEmpl all">
+    <button class="review_employer">
+      <p class="review_employer_p"> Директор по маркетингу в Checkroi </p>
+       <h3 class="review_employer_h3">Максим Зубцов5</h3>
+        <img class="review_employer_img" src="https://248006.selcdn.ru/LandGen/3e574a760e482658dd9e52c39903f369233e0297.webp " alt="python_devoloper">
+        <p class="review_employer_p2"> Skillbox подбирает кандидатов с горящими глазами и желанием развиваться. Например, руководитель нашего SEO-отдела когда-то был новичком, с которым мы встретились благодаря Центру карьеры. </p>
+   </button>
+   <button class="review_employer">
+    <p class="review_employer_p"> Директор по маркетингу в Checkroi </p>
+     <h3 class="review_employer_h3">Максим Зубцов6</h3>
+      <img class="review_employer_img" src="https://248006.selcdn.ru/LandGen/3e574a760e482658dd9e52c39903f369233e0297.webp " alt="python_devoloper">
+      <p class="review_employer_p2"> Skillbox подбирает кандидатов с горящими глазами и желанием развиваться. Например, руководитель нашего SEO-отдела когда-то был новичком, с которым мы встретились благодаря Центру карьеры. </p>
+  </button>
+  </div>
+  
+  <a class="prev_page" onclick="plusSlides(-1)">❮</a>
+  <a class="next_page" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  
+  <div class="next_prev_1">
+    <span class="next_prev" onclick="currentSlide_number(1)"></span> 
+    <span class="next_prev" onclick="currentSlide_number(2)"></span> 
+    <span class="next_prev" onclick="currentSlide_number(3)"></span> 
+  </div>
     </div>
+   
 </section>
 <script src="Example2.js"></script>
 </body>
