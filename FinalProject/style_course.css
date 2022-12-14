@@ -27,19 +27,22 @@ body{
       
   }
  .button_main_page_python:hover{
-     background-color: lavenderblush;}
+     background-color: black;}
+
   .button_main_page_python{
-     border-radius: 50px;
+    border: none;
+     border-radius: 15px;
       cursor: pointer;
-      padding: 5px 15px 5px 15px;
-      background-color: lavender;
-      color: black;
-      border: 2px solid lavender;
+      padding: 25px;
+      background-color: #3D3BFF;
+      color: white;
       margin-left:10%;
       margin-bottom: 5% ;
       font-size: 150%;
       line-height: 20px;
      text-align: center;
+
+     transition: 0.2s ease-in-out;
   }
   #python_second_text{
      font-size: 25px;
