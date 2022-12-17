@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;  
+    overflow: hidden;
+}
+body{
+    min-height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    background:linear-gradient(135deg ,#71b7e6,#9b59b6);
+}
+.all_container{
+    display:inline-flex;
+    border-radius: 8px;
+    height: 520px;
+}
+.picture_registration{
+    width:407px;
+}
+.container{
+    position: relative;
+    max-width: 370px;
+    width:100%;
+    padding:25px;
+    background-color: #fff;  
+}
+.p_lesson{
+    color: #0042ad;
+    font-size: 16px;
+    margin-top: 1px;
+}
+.container header{
+    line-height: 27px;
+    width: 304px;
+    font-weight: 600;
+    color: #0042ad;
+    text-align: center;
+    font-size: 21px;
+}
+.container form{
+    margin-top:30px;
+}
+form .field{
+  margin-bottom:7px;
+  text-align: center;
+
+}
+form .input-field{
+    position:relative;
+    height:55px;
+    width:100%;
+}
+.input-field input{
+    height:81%;
+    width:100%;
+    outline:none;
+    border:none;
+    border-radius:8px;
+    padding:0 15px;
+    border:1px solid #d1d1d1;
+}     
+.button{
+    margin:25px 0 6px;
+}
+.button input{
+   color:#fff;
+   font-size:16px;
+   font-weight: 400;
+   background-color:#4070f4;
+   cursor:pointer;
+   transition: all 0.3s ease;
+}
+.button input:hover{
+   background-color: #0e4bf1;
+}
