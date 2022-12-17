@@ -20,8 +20,10 @@ body{
   color: black;
  }
   #main_page_python_img{
-     margin: -450px 0 50px 700px;
+     margin: -450px 0 50px 900px;
     text-align: right;
+      width: 30%;
+      height: 30%;
   }
  .button_main_page_python:hover{
      background-color: black;}
