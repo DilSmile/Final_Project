@@ -1,36 +1,41 @@
 <?php
-session_start();
-$conn = mysqli_connect("localhost", "root", "", "testphp");
-
-
+require 'connection.php';
+if(!empty($_SESSION["id"])){
+  header("Location: index.php");
+}
 if(isset($_POST["submit"])){
   $username = $_POST["username"];
   $email = $_POST["email"];
-  $number= $_POST["number"];
-  $duplicate = mysqli_query($conn, "SELECT * FROM login_ WHERE username = '$username' OR email = '$email'");
+  $password = $_POST["password"];
+  $confirmpassword = $_POST["confirmpassword"];
+  $duplicate = mysqli_query($conn, "SELECT * FROM registration WHERE username = '$username' OR email = '$email'");
   if(mysqli_num_rows($duplicate) > 0){
     echo
-    "<script> alert('Имя пользователя или электронный почта ранее использовалось); </script>";
+    "<script> alert('Username or Email Has Already Taken'); </script>";
   }
   else{
-      $query = "INSERT INTO login_ VALUES('','$username','$email','$number')";
+    if($password == $confirmpassword){
+      $query = "INSERT INTO registration VALUES('','$username','$email','$password')";
       mysqli_query($conn, $query);
       echo
-      "<script> alert('Ваши данные получены'); </script>";
+      "<script> alert('Registration Successful'); </script>";
+    }
+    else{
+      echo
+      "<script> alert('Password Does Not Match'); </script>";
+    }
   }
 }
 ?>
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Бесплатный урок</title>
-    <link rel="stylesheet"  href="registration.css">
+    <title>Регистрация</title>
+    <link rel="stylesheet"  href="index.css"/>
   </head>
   <body>
-    <div class ="all_container">
-    <img  class="picture_registration" src="https://i.pinimg.com/564x/37/4c/fb/374cfb17f8a6cc014b85bb9e464ea526.jpg" >
 <div class="container">
-  <header>Запишитесь на бесплатный пробный урок</header>
+  <header>Регистрация</header>
   <form class="" action="" method="post" autocomplete="off" >
     <div class="field Username">
     <div class="input-field ">
@@ -42,20 +47,22 @@ if(isset($_POST["submit"])){
         <input type="email" name="email" id = "email" required value=""  placeholder="Введите свой адрес электронной почты"> <br>
      </div>
     </div>
-    <div class="field phone_number">
+    <div class="field password">
     <div class="input-field ">
-        <input type="number" name="number" id = "number" required value=""  placeholder="Введите свой номер телефона"> <br>
+        <input type="password" name="password" id = "password" required value=""  placeholder="Введите свой пароль"> <br>
+     </div>
+    </div>
+    <div class="field cPasword">
+     <div class="input-field ">
+        <input type="password" name="confirmpassword" id = "confirmpassword" required value=""  placeholder="Подвердите свой пароль"> <br>
      </div>
     </div>
     <div class="input-field button">
-        <input type="submit"name="submit" value="Отправить заявку">
+        <input type="submit"name="submit" value="Отправить">
     </div>
   </form>
-  <br>
-  <p class="p_lesson"><b>Оставьте свои контакты и укажите свои данные мы свяжемся с вами!</b></p>
-  <a style="text-decoration:none"href="index.html">Вернуться назад</a>
-    </div>
-   </div>
-</body>
-</html>
+    <p class="text_log">После регистаций вернитесь на страницу Войти чтобы пройти тест</p>
+    <br>
+  <a class="text_log2"href="login.php">Войти</a>
 
+</div>
