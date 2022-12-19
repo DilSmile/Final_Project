@@ -4,14 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>first_article</title>
 </head>
-<body>
     <style>
         body{
             margin:0 230px 0 230px;
         }
+        .div_dilnaz{
+            display:inline-flex;
+            justify-content: space-between;
+            margin: 39px 56px;
+        }
+        .p_dilnaz{
+            width: 251px;
+            font-size: 20px;
+        }
+        .h_dilnaz{
+            font-size: 26px;
+        }
+        .img_all{
+            width:200px;
+            height: 200px;
+        }
+        .article_div{
+            padding:25px;
+        }.h1_couse{
+    animation:h1_couseText 1.2s infinite;
+    font-size: 59px;
+}
+@keyframes h1_couseText{
+    0%{     color: #FFEB3B;    }
+    49%{    color: #FF5722; }
+    60%{    color: #429600; }
+    99%{    color: #e91e1e;  }
+    100%{   color: #FFF;    }
+}
+#panel, #flip {
+      padding: 5px;
+      text-align: center;
+      color: #4646d6;
+      font-size:30px;
+    }
+    
+    #panel {
+      padding: 50px;
+      display: none;
+      font-size:24px;
+    }
     </style>
+    </body>
+    <script>
+          $(document).ready(function(){
+        $("#flip").click(function(){
+            $("#panel").slideToggle("slow");
+        });
+    });
+    </script>
+    <section>
+        <h1 class="h1_couse">Почему CourSDU</h1>
+        <div class="div_dilnaz">
+            <div class="article_div">
+                <img class="img_all" src="https://cdn.kastatic.org/images/lohp/personalized_learning_icon.png">
+                <h3 class="h_dilnaz">Лучший обучение</h3>
+                <p class="p_dilnaz">Студенты практикуются в своем собственном темпе, сначала заполняя пробелы в своем понимании, а затем ускоряя свое обучение.</p>
+            </div>
+        <div class="article_div">
+            <img class="img_all" src="https://cdn.kastatic.org/images/lohp/trusted_content_icon.png">
+            <h3  class="h_dilnaz">Доверенный контент</h3>
+            <p class="p_dilnaz">Созданная экспертами библиотека надежных практик и уроков CourSDU охватывает много языков програмирование</p>
+        </div>
+        <div class="article_div">
+            <img class="img_all"src="https://cdn.kastatic.org/images/lohp/empower_teachers_icon.png">
+            <h3  class="h_dilnaz">Развития вместо</h3>
+            <p class="p_dilnaz">С CourSDU ученики могут  адаптировать обучение и получить образование в области программирования</p>
+        </div>
+    </div>
+    </section>
+    <section>
+        <div id="flip"><b>Добивайтесь успеха с помощью персонализированных услуг.</b></div>
+    <div id="panel">
+        <h1 class="h1_bonus">Бонусы от CourSDU</h1>
+        <p class="p_bonus">На онлайн-платформе CourSDU вас ждет карьерное сопровождение с нуля, дополнительные курсы и другие бонусы. Вы соберете портфолио из проектов и узнаете, как запустить собственный бизнес в IT.</p>
+    </div>
+    </section>
+    <section>
     <h1 style="font-size:250%;">Ключевые результаты</h1>
 
     <div class="main_text_article" style="display:flex">
@@ -46,5 +123,7 @@ margin-right:50px; margin-top:150px">
    
 </div> 
 </div>
+</section>
+
 </body>
 </html>
